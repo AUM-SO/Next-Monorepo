@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=web",
+    "dev:web-admin": "turbo dev --filter=web-admin",
+    "dev:full": "bunx turbo dev --filter=web --filter=web-admin",
     "lint": "turbo lint",
     "format": "turbo format",
     "typecheck": "turbo typecheck"
@@ -14,9 +16,10 @@
     "@workspace/typescript-config": "workspace:*",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "turbo": "^2.8.17",
+    "turbo": "^2.8.20",
     "typescript": "5.9.3"
   },
+  "packageManager": "bun@1.3.9",
   "engines": {
     "node": ">=20"
   },
