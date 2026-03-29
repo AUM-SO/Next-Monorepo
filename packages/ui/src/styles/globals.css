@@ -126,3 +126,14 @@
     @apply bg-background text-foreground;
     }
 }
+
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,..."); /* SVG noise เดิม */
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  border-radius: inherit;
+}
