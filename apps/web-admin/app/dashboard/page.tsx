@@ -4,6 +4,7 @@ import {
   ShoppingCartIcon,
   ActivityIcon,
 } from "lucide-react";
+import { CookieConsent } from "@workspace/ui/components/cookie-consent";
 
 const stats = [
   {
@@ -47,6 +48,7 @@ const recentSales = [
 export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-6 p-6 lg:p-8">
+      <CookieConsent />
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
