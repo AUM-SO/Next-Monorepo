@@ -3,9 +3,9 @@
 import * as React from "react";
 
 import { cn } from "@workspace/ui/lib/utils";
-import { Button } from "@workspace/components/ui/button";
-import { Input } from "@workspace/components/ui/input";
-import { Label } from "@workspace/components/ui/label";
+import { Button } from "@workspace/ui/components/button";
+import { Input } from "@workspace/ui/components/input";
+import { Label } from "@workspace/ui/components/label";
 import { GithubIcon, LoaderIcon } from "lucide-react";
 
 export function UserAuthForm({ className, ...props }: React.ComponentProps<"div">) {
